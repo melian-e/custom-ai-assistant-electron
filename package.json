@@ -22,7 +22,7 @@
     "@electron/fuses": "^1.8.0",
     "electron": "^23.0.0"
   },
-  "description": "Boilerplate for a simple Electron app",
+  "description": "Desktop AI assistant for Windows, Mac and Linux",
   "author": "MichaelCurrin",
   "license": "MIT",
   "repository": {
