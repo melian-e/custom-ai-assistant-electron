@@ -23,11 +23,11 @@
     "electron": "^23.0.0"
   },
   "description": "Desktop AI assistant for Windows, Mac and Linux",
-  "author": "MichaelCurrin",
+  "author": "Anda Pirate",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MichaelCurrin/electron-quickstart.git"
+    "url": "git+https://github.com/Andaroth/ai-assistant-electron.git"
   },
   "keywords": [
     "electron",
@@ -36,9 +36,9 @@
     "beginner"
   ],
   "bugs": {
-    "url": "https://github.com/MichaelCurrin/electron-quickstart/issues"
+    "url": "https://github.com/Andaroth/ai-assistant-electron/issues"
   },
-  "homepage": "https://github.com/MichaelCurrin/electron-quickstart#readme",
+  "homepage": "https://github.com/Andaroth/ai-assistant-electron#readme",
   "dependencies": {
     "electron-prompt": "^1.7.0",
     "electron-squirrel-startup": "^1.0.1"
