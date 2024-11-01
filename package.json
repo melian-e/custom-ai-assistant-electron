@@ -1,5 +1,5 @@
 {
-  "name": "chatgpt-electron",
+  "name": "ai-assistant-electron",
   "version": "0.1.0",
   "main": "main.js",
   "scripts": {
