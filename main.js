@@ -16,6 +16,10 @@ const availableAIs = [
     label: "MistralAI",
     url: 'https://chat.mistral.ai/chat'
   },
+  {
+    label: "Copilot Pro",
+    url: 'https://copilot.cloud.microsoft'
+  },
 ]
 
 const { Menu, app, BrowserWindow, session } = require('electron');
