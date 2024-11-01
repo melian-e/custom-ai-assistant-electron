@@ -284,6 +284,7 @@ function generateMenu() {
         },
       })),
     },
+    /*
     {
       label: "Options",
       submenu: [
@@ -297,9 +298,30 @@ function generateMenu() {
         },
       ],
     },
+    */
     {
       label: "Settings",
       submenu: [
+        {
+          label: "Theme",
+          submenu: fetchThemes().map((str) => ({
+            label: str,
+            click() {changeUserTheme(str, true)}
+          }))
+        },
+        {
+          label: "Options",
+          submenu: [
+            {
+              label: "Streamer mode",
+              type: "checkbox",
+              checked: loadUserPreferences().streamer,
+              click() {
+                toggleStreamer();
+              },
+            },
+          ],
+        },
         {
           label: "Availables AIs",
           submenu: availableAIs.map(({ label, id, available }) => ({
