@@ -323,7 +323,7 @@ function generateMenu() {
           ],
         },
         {
-          label: "Availables AIs",
+          label: "Available AIs",
           submenu: availableAIs.map(({ label, id, available }) => ({
             label,
             type: "checkbox",

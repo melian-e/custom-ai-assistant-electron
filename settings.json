@@ -16,7 +16,13 @@
       "id": 3,
       "label": "MistralAI",
       "url": "https://chat.mistral.ai/chat",
-      "available": true
+      "available": false
+    },
+    {
+      "label": "Copilot Pro",
+      "url": "https://copilot.cloud.microsoft",
+      "available": true,
+      "id": 4
     }
   ]
 }
