@@ -1,0 +1,28 @@
+{
+  "availableAIs": [
+    {
+      "id": 1,
+      "label": "ChatGPT",
+      "url": "https://chat.openai.com",
+      "available": true
+    },
+    {
+      "id": 2,
+      "label": "Copilot",
+      "url": "https://copilot.microsoft.com/",
+      "available": true
+    },
+    {
+      "id": 3,
+      "label": "MistralAI",
+      "url": "https://chat.mistral.ai/chat",
+      "available": false
+    },
+    {
+      "label": "Copilot Pro",
+      "url": "https://copilot.cloud.microsoft",
+      "available": true,
+      "id": 4
+    }
+  ]
+}
