@@ -14,6 +14,9 @@ const path = require("path");
 let win;
 let userSettings;
 
+let width = 400;
+let height = 600;
+
 const isMac = process.platform === "darwin";
 
 const defaultSettings = {
@@ -409,11 +412,17 @@ function addNewAIPrompt() {
 }
 
 function createWindow() {
+  screen = require("electron").screen;
+
+
   win = new BrowserWindow({
-    width: 800,
-    height: 600,
-    autoHideMenuBar: false,
+    width: width,
+    height: height,
+    autoHideMenuBar: true,
     frame: true,
+    fullscreenable: false,
+    x: 0,
+    y: screen.getPrimaryDisplay().workArea.height - height,
     webPreferences: {
       nodeIntegration: true,
       enableRemoteModule: true,
@@ -441,6 +450,10 @@ function createWindow() {
     generateMenu();
 
     changeUserTheme(userSettings.theme);
+
+    const customCssGptMenuClosed = "div.flex-shrink-0.overflow-x-hidden.bg-token-sidebar-surface-primary.max-md\:\!w-0 {width: 0px; visibility: hidden; will-change: auto;}"
+
+    win.webContents.insertCSS(customCssGptMenuClosed);
 
     if (userSettings.streamer) {
       // hide private data in UI:
